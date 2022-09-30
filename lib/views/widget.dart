@@ -13,16 +13,19 @@ class WidgetPage extends StatefulWidget {
 class _WidgetPageState extends State<WidgetPage> {
   bool liked = false;
   Color heart_color = Colors.grey;
+  Color darkblue = Color(0xFF0c1d37);
+  Color brown = Color(0xFF37260c);
+  Color light_gray = Color(0xFF727d90);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: darkblue,
         title: Text("Mission 1"),
       ),
       body: Container(
         decoration: BoxDecoration(
-          color: Colors.black,
+          color: darkblue,
           // gradient: LinearGradient(
           //   begin: Alignment.topLeft,
           //   colors: [Colors.red.shade500, Colors.blue.shade500],
@@ -50,8 +53,8 @@ class _WidgetPageState extends State<WidgetPage> {
                     alignment: Alignment.topRight,
                     child: Container(
                       decoration: BoxDecoration(
-                        border: Border.all(color: Colors.white, width: 4),
-                        color: Colors.black,
+                        border: Border.all(color: darkblue, width: 8),
+                        color: brown,
                         shape: BoxShape.circle,
                       ),
                       margin: EdgeInsets.all(16),
@@ -73,15 +76,18 @@ class _WidgetPageState extends State<WidgetPage> {
             Flexible(
               flex: 1,
               child: Container(
+                margin: EdgeInsets.only(top: 8),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Flexible(
                       child: Container(
-                        margin: EdgeInsets.symmetric(horizontal: 8.0),
+                        margin: EdgeInsets.symmetric(horizontal: 4.0),
                         decoration: BoxDecoration(
-                          border: Border.all(color: Colors.transparent),
-                          // borderRadius: BorderRadius.all(Radius.circular(12)),
+                          // border: Border.all(color: Colors.transparent),
+                          borderRadius: BorderRadius.all(Radius.circular(12)),
                           image: DecorationImage(
+                            fit: BoxFit.cover,
                             image: AssetImage("assets/images/killua.jpg"),
                           ),
                         ),
@@ -89,11 +95,12 @@ class _WidgetPageState extends State<WidgetPage> {
                     ),
                     Flexible(
                       child: Container(
-                        margin: EdgeInsets.symmetric(horizontal: 8.0),
+                        margin: EdgeInsets.symmetric(horizontal: 4.0),
                         decoration: BoxDecoration(
-                          border: Border.all(color: Colors.transparent),
-                          // borderRadius: BorderRadius.all(Radius.circular(12)),
+                          // border: Border.all(color: Colors.transparent),
+                          borderRadius: BorderRadius.all(Radius.circular(12)),
                           image: DecorationImage(
+                            fit: BoxFit.cover,
                             image: AssetImage("assets/images/gon.jpg"),
                           ),
                         ),
@@ -101,11 +108,12 @@ class _WidgetPageState extends State<WidgetPage> {
                     ),
                     Flexible(
                       child: Container(
-                        margin: EdgeInsets.symmetric(horizontal: 8.0),
+                        margin: EdgeInsets.symmetric(horizontal: 4.0),
                         decoration: BoxDecoration(
-                          border: Border.all(color: Colors.transparent),
-                          // borderRadius: BorderRadius.all(Radius.circular(12)),
+                          // border: Border.all(color: Colors.transparent),
+                          borderRadius: BorderRadius.all(Radius.circular(12)),
                           image: DecorationImage(
+                            fit: BoxFit.cover,
                             image: AssetImage("assets/images/hisoka.jpg"),
                           ),
                         ),
@@ -113,11 +121,12 @@ class _WidgetPageState extends State<WidgetPage> {
                     ),
                     Flexible(
                       child: Container(
-                        margin: EdgeInsets.symmetric(horizontal: 8.0),
+                        margin: EdgeInsets.symmetric(horizontal: 4.0),
                         decoration: BoxDecoration(
-                          border: Border.all(color: Colors.transparent),
-                          // borderRadius: BorderRadius.all(Radius.circular(12)),
+                          // border: Border.all(color: Colors.transparent),
+                          borderRadius: BorderRadius.all(Radius.circular(12)),
                           image: DecorationImage(
+                            fit: BoxFit.cover,
                             image: AssetImage("assets/images/shizuku.jpg"),
                           ),
                         ),
@@ -127,25 +136,94 @@ class _WidgetPageState extends State<WidgetPage> {
                 ),
               ),
             ),
-            Container(
-              alignment: Alignment.center,
-              child: Text("Sheesh",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                  )),
-            ),
             Flexible(
               flex: 4,
-              child: ListView(
+              child: Column(
                 children: [
-                  Text(
-                      "囲フコス年社ヲユ達渉ぴはい動56過法ク質顧芸りご辺暮ワヌヨ所絵ぼたご見売38特はらんス事課イゅッよ天4約て千者と堀活ヌ全多ト惑森児ゅ。別ちず巧返ス均栃ルトヒイ毎森ヤヘヱ古前そにた際経セヌマ要東物者8学21月ゃひさぱ移夕かイ真士らょば光他とい栽横退冠トおらと。\n文ねラゅん地個に道去8点わド度朗フテネエ校5例レともぼ具必ば解前以ノ見織ヲリシモ需墨ぶしゅ東史処さず。6浩ニハ司出ね駆老ヱ更20建ラオアセ著患ヤエヨ放産スヒノユ題上ぜ替最球こ善作ムカヌ立仏功げみや。司ソア海所テ科入セナニ治玲ンこず奪促もル球原意ぐけぶッ万彫せしぞ戦人じつせ要転ごめき川込ワアリ審売乙ドごぱイ。\n農ステツ情先統む場村供トナ厚摘づれため関数ねリょ毎織キヒホモ京転リ済権マホチ追険大っとゃむ取御ぶがぽ都側す本得ヘスユハ育午クねふは造主樹ぐ。置ムモ経気むすぼ堂展厚ばそゅ初表ユメト条2毎ッよょて日鳥づほ死全た経属ヒ聞造質とふ紙具でまばひ授準ヤリコイ寺響ぴへよを北昨評ヨ波味レラモ選融モ追拘肌陶善え。更強放き念2調ツヱセコ金49開もひそ止9防リキ落果21報ゆスフッ噴掛焼詐だぎ。\n顕ツワニイ写3登ロ少57麻駅ぎるざん破支シヌリノ初土ヌ紙解ねこ図安マ子36特しめ重感ぱうッ米度必瀬資ぼた公林うろへ感真ユ歌話ぴちけ。居づぴえせ貢額参じ不響シ陸党ル負敗るにッゆ使祥フてゃ都百ハラナ式建モオリ恒正国キ日内魂ぞ帯8真ゃぱほ井芸版ソ歌伝白南しさ。\n克ヨムイユ支犯レエヒモ放77葉第ハイム止惑減ゃぽほッ影内ふイフつ獄沖てイ検初ノセシカ左尋ツ同訴奈ッっ月億ネ断月えだがて母海載にさろな約必フ務意ヱキケワ男予ゃどぴ。型う要緯り検続ニコ鍋紙スんしふ運7件にルぞと提便カク援掲クテムリ宇1代ょぽけ東可衆マミニ貯剤皮騒条にぶへか。資暑ホモ展版雪つぐ北知れるたべ所銀ラチ喜農じン学作オルシ政納期スッざげ賞南通ケマタク鳩極っうルぞ文16面ぜゃラ西響団まてらー。\n話づ最更車ぼじし年立一だッ夕質な安投あ実品つ集氏ロルヌ停雅オニハマ運地タソ亡問ヒミ止表すトねも住18定32加ほくび録応岐コホ時言出リはどり。件つルも間転ク問認ヨウ接載めほ提明ネナヒ常開よぐ件記非に原断ネライマ開失ずぱ育13夜7玲ぐひゆえ出4公リサ職地沈図縮六リ周浦絶充救しせゃぞ。\n手ソワ平暮キシ深月84王モ本建せろら善観康あ格細づイラう県多げほ負準ー部思ヨケ屋34石舞ル続交示考わクおつ。心りみ治武ちい夜打ヌ館育ド貸芸ロシケカ船天ノ省僚をり行5差キ長街めれとざ会文端ノ東会ミスハセ方金いぽぴ案6困摘や。探ぱこ要幼コ断知ラに偽渡足題こた長壁れをほ地突安名リフわ準断フ功作げ入補8覧サ超芸エ退経けレ刊十流ぞトふ。\n写っぶ球今発くん転記け目汁下づて分根葉ろま京囲賛とくご謙73評ミノケロ時茨ネ問科ゆぞぜわ極煙畿笠つまぜづ。京ヨム回球とるゆ順9軸サ説全メヘ害過ト載正覧レま屈全ネリ応画べなスづ断案ケノルコ応38階齢だ。87広ろ購開ヤヨカ海復さべ城著エイ相辞ワトレソ選7高オセ属経装てうごー採題図りすさけ造直ヤホラト企試名ホ史納株ぜ意子も男慎併継れ。\n",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w300,
-                      )),
+                  Flexible(
+                    flex: 1,
+                    child: Row(
+                      children: [
+                        Flexible(
+                          flex: 3,
+                          child: Container(
+                            alignment: Alignment.centerLeft,
+                            margin: EdgeInsets.only(
+                                top: 4.0, bottom: 4.0, left: 24.0),
+                            child: Text("HUNTER X HUNTER",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'Futura',
+                                )),
+                          ),
+                        ),
+                        Flexible(
+                          flex: 1,
+                          child: Container(
+                            alignment: Alignment.centerRight,
+                            margin: EdgeInsets.only(
+                                top: 4.0, bottom: 4.0, right: 24.0),
+                            child: Text("2 October 2011",
+                                textAlign: TextAlign.end,
+                                style: TextStyle(
+                                  color: light_gray,
+                                  fontSize: 12,
+                                  fontFamily: 'Fontspring',
+                                )),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Flexible(
+                    flex: 5,
+                    child: ListView(
+                      padding: EdgeInsets.only(
+                          top: 0.0, bottom: 24.0, left: 24.0, right: 24.0),
+                      children: [
+                        Text(
+                            "The story follows a young boy named Gon Freecss, who was told all his life that both his parents were dead. But when he learns from Kite, an apprentice of his father Ging Freecss, that he is still alive and has since become an accomplished Hunter, Gon leaves his home on Whale Island (くじら島, Kujira Tō) to take the Hunter Examination (ハンター試験, Hantā Shiken) in order to become a Hunter like him. During the exam, Gon meets and befriends three of the other applicants: Kurapika, the last remaining member of the Kurta clan who wishes to become a Hunter in order to avenge his clan and recover their scarlet-glowing eyes that were plucked from their corpses by a band of thieves known as the Phantom Troupe; Leorio, a prospective physician who, in order to pay for medical school, desires the financial benefits that Hunters receive; and Killua Zoldyck, another twelve-year-old boy who has left his former life as a member of the world's most notorious assassin family.Among many other examinees, Gon continuously encounters Hisoka, a mysterious and deadly transmuter who takes an interest in him. After many trials together, Gon and his friends end up passing the exam except for Killua, who fails after killing another applicant due to the influence of his brother, Illumi, and runs away to his family's estate in shame.\n",
+                            textAlign: TextAlign.justify,
+                            style: TextStyle(
+                              color: light_gray,
+                              fontWeight: FontWeight.w300,
+                            )),
+                        Text(
+                            "After Gon and the others convince Killua to rejoin their side, Leorio and Kurapika depart temporarily for their own personal reasons, while Gon and Killua set for the Heavens Arena (天空闘技場, Tenkū Tōgijō), a skyscraper where thousands of martial artists compete daily in fighting tournaments, seeking to improve themselves and gain monetary rewards.There they meet Zushi, a fellow Heavens Arena applicant, who has a kung fu master named Wing who trains them in utilizing Nen, a Qi-like life energy used by its practicers to manifest parapsychological abilities, and is also considered to be the final requirement to pass the Hunter Exam. Sometime later, Gon and his friends reunite again in Yorknew City (ヨークシンシティ, Yōkushin Shiti) where they have a clash with the Phantom Troupe. During the occasion, two from the band of thieves are killed by Kurapika and he is forced to give up the chance of hunting down the rest in order to rescue Gon and Killua from captured, but not without succeeding in sealing the powers of their leader, Chrollo Lucilfer.\n",
+                            textAlign: TextAlign.justify,
+                            style: TextStyle(
+                              color: light_gray,
+                              fontWeight: FontWeight.w300,
+                            )),
+                        Text(
+                            "A few days later, Gon and Killua achieve their objective and begin playing Greed Island, an extremely rare and expensive video game with Nen-like properties following some clues about Ging's whereabouts.While exploring the game, it is revealed that its scenario is actually set somewhere in the real world, created with Nen by a team led by none other than Ging himself. Outclassed by the challenges in the game at first, they are soon joined and trained by Biscuit Krueger, an experienced teacher of Nen and kung fu master. With Biscuit's help, Gon and Killua train their Nen and learn to shape their abilities to their traits. Killua takes a short break from Greed Island to apply for the Hunter Examination again, this time passes with success. The trio then complete the game together against all odds and Gon obtains the right to choose the artifacts from the game necessary to reunite with his father.\n",
+                            textAlign: TextAlign.justify,
+                            style: TextStyle(
+                              color: light_gray,
+                              fontWeight: FontWeight.w300,
+                            )),
+                        //
+                        Text(
+                            "Gon decides to have Killua accompany him to meet his father using the artifacts, but the duo are sent to meet Kite instead. They decide to help with Kite's research of a man-sized Chimera Ant queen, an insect that devours other creatures and then gives birth to progeny that inherit the characteristics of the different species it has eaten. The queen washes up onto an island nation called the Neo-Green Life (N.G.L.) Autonomous Region, where she quickly develops a taste for humans and builds a colony powerful enough to overcome the population, especially after her offspring learn the power of Nen from consuming Hunters. Upon facing the Royal Guard of the Chimera Ants, Kite sacrifices himself to allow Gon and Killua to flee and alert the Hunter Association. After weeks of preparation, the Association sends a team of some of their most powerful Hunters, including Netero, the president of the Association himself to defeat the Ants and their king Meruem, whose subjects secretly overthrew the government of the nearby Republic of East Gorteau (東ゴルトー共和国, Higashi Gorutō Kyouwakoku) as part of their plan of subduing all of mankind. Despite losing to Meruem in combat, Netero ends up killing him with a bomb implanted in his body that poisons him to death soon after. Meanwhile, Gon has a showdown with Neferpitou, the Ant who killed Kite. After overusing Nen to exact his revenge, he is hospitalized and in critical condition. After the Chimera Ant incident is resolved, the Hunter Association's top echelons the Zodiacs, from which Ging is a member, begin the process of choosing Netero's replacement as Chairman, while Killua returns home to ask for his younger sister Alluka to save Gon's life. His family is unwilling to risk losing Alluka or having her dangerous powers used against them, but after evading his older brother Illumi's attempts to intercept him, Killua manages to bring Alluka to Gon's side and have him fully restored. He then attempts to seal away Alluka's alter ego which grants them their power (Nanika, likely a creature from the Dark Continent), but at the last moment decides to revert the process rather than seal away Nanika Alluka's only other friend. Killua then parts ways with Gon to travel the world with Alluka, while Gon himself finally meets his father and learns the true nature of his quest.\n",
+                            textAlign: TextAlign.justify,
+                            style: TextStyle(
+                              color: light_gray,
+                              fontWeight: FontWeight.w300,
+                            )),
+
+                        Text(
+                            "Some time later, Netero's son Beyond assembles an expedition to the Dark Continent (暗黒大陸, Ankoku Tairiku), the forbidden, vast area outside of the known world; he is sponsored by the Kingdom of Kakin. Fearing that the expedition may bring disaster, just like in all previous attempts, the world's five greatest powers accept that Kakin join their ranks in exchange for full authority over its findings. To accompany Beyond and ensure his compliance, the Zodiacs decide to watch over him and invite Kurapika and Leorio to join them, replacing Ging and former Vice-Chairman Pariston Hill, who assembled their own Dark Continent exploration teams by Beyond's request.Meanwhile, Chrollo regains his powers and fulfills Hisoka's wish to have a duel with him, which ends with Hisoka defeated and killed. After reviving through Nen, Hisoka starts killing off the Phantom Troupe members one by one, who have boarded Kakin's ship to the Dark Continent to rob it. Aboard the ship, Nasubi, the king of Kakin, starts a battle to the death between his heirs to decide his successor. Kurapika, who also infiltrated the ship with other Hunters, takes part in the succession war as the bodyguard of Fourteenth Prince Wobble, Kakin's youngest prince and a toddler. Kurapika's personal objective, however, is to retrieve the last batch of scarlet eyes from the Kurta Clan in custody of Tserriednich, Kakin's Fourth Prince.",
+                            textAlign: TextAlign.justify,
+                            style: TextStyle(
+                              color: light_gray,
+                              fontWeight: FontWeight.w300,
+                            )),
+                        //
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
