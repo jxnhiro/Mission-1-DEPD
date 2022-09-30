@@ -66,7 +66,7 @@ class _WidgetPageState extends State<WidgetPage> {
                           });
                         },
                         child: Icon(Icons.favorite,
-                            color: liked ? Colors.red : Colors.grey),
+                            color: liked ? Colors.red : Colors.white),
                       ),
                     ),
                   ),
@@ -204,7 +204,6 @@ class _WidgetPageState extends State<WidgetPage> {
                               color: light_gray,
                               fontWeight: FontWeight.w300,
                             )),
-                        //
                         Text(
                             "Gon decides to have Killua accompany him to meet his father using the artifacts, but the duo are sent to meet Kite instead. They decide to help with Kite's research of a man-sized Chimera Ant queen, an insect that devours other creatures and then gives birth to progeny that inherit the characteristics of the different species it has eaten. The queen washes up onto an island nation called the Neo-Green Life (N.G.L.) Autonomous Region, where she quickly develops a taste for humans and builds a colony powerful enough to overcome the population, especially after her offspring learn the power of Nen from consuming Hunters. Upon facing the Royal Guard of the Chimera Ants, Kite sacrifices himself to allow Gon and Killua to flee and alert the Hunter Association. After weeks of preparation, the Association sends a team of some of their most powerful Hunters, including Netero, the president of the Association himself to defeat the Ants and their king Meruem, whose subjects secretly overthrew the government of the nearby Republic of East Gorteau (東ゴルトー共和国, Higashi Gorutō Kyouwakoku) as part of their plan of subduing all of mankind. Despite losing to Meruem in combat, Netero ends up killing him with a bomb implanted in his body that poisons him to death soon after. Meanwhile, Gon has a showdown with Neferpitou, the Ant who killed Kite. After overusing Nen to exact his revenge, he is hospitalized and in critical condition. After the Chimera Ant incident is resolved, the Hunter Association's top echelons the Zodiacs, from which Ging is a member, begin the process of choosing Netero's replacement as Chairman, while Killua returns home to ask for his younger sister Alluka to save Gon's life. His family is unwilling to risk losing Alluka or having her dangerous powers used against them, but after evading his older brother Illumi's attempts to intercept him, Killua manages to bring Alluka to Gon's side and have him fully restored. He then attempts to seal away Alluka's alter ego which grants them their power (Nanika, likely a creature from the Dark Continent), but at the last moment decides to revert the process rather than seal away Nanika Alluka's only other friend. Killua then parts ways with Gon to travel the world with Alluka, while Gon himself finally meets his father and learns the true nature of his quest.\n",
                             textAlign: TextAlign.justify,
